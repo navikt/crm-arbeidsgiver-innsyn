@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": false,
+      "default": true,
       "package": "crm-arbeidsgiver-innsyn",
       "versionNumber": "0.1.0.NEXT",
       "dependencies": [
