@@ -2,11 +2,21 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "package": "crm-arbeidsgiver-innsyn",
+            "versionNumber": "1.0.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "crm-platform-base",
+                    "versionNumber": "0.202.0.LATEST"
+                }
+            ]
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "57.0",
-    "packageAliases": {}
+    "packageAliases": {
+    "crm-platform-base": "0Ho2o0000008ORmCAM"
+    }
 }
