@@ -6,6 +6,7 @@
 
 # NOTE!! Do NOT use **/ before
 !unpackagable/profiles/*
+!unpackagable/objects/*
 # NOTE!! Do NOT use **/ before
 
 
@@ -33,15 +34,20 @@
 # translations
 # ----------------------------------------------------------------------------------------
 **/translations/en_US.translation-meta.xml
+**/tanslations/no.translation-meta.xml
 **/objectTranslations/*-en_US
 !**/objectTranslations/Opportunity-en_US
 !**/objectTranslations/CustomOpportunity__c-en_US
+
 
 
 # bugs (cannot be pushed)
 # ----------------------------------------------------------------------------------------
 **/AppSwitcher.appMenu*
 **/navigationMenus/*
+**fieldRestrictionRules
+
+**fieldRestrictionRules
 
 
 # LWC
@@ -67,6 +73,7 @@
 **/workflows/CustomOpportunity__c*
 **/workflows/Contract__c*
 **/layouts/CustomOpportunity__c-Custom Opportunity Layout.layout-meta.xml
+**/force-app/main/default/permissionsets/sfdcInternalInt__sfdc_scrt2.permissionset-meta.xml
 
 
 # # community classes

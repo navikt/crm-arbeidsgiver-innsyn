@@ -3,14 +3,13 @@
 # ----------------------------------------------------------------------------------------
 **/profiles/*
 
-# lwc config
-**/jsconfig.json
-
-
 # NOTE!! USE **/ before
 !**/unpackagable/profiles/* 
+!**/unpackagable/objects/*
 # NOTE!! USE **/ before
 
+# lwc config
+**/jsconfig.json
 
 # standard fields not needed in source control
 # ----------------------------------------------------------------------------------------
@@ -184,3 +183,6 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+# Environment variables
+env.json
