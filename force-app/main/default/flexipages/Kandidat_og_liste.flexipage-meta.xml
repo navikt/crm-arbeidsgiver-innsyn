@@ -59,6 +59,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Copy_of_notes__c</fieldItem>
+                <identifier>RecordCopy_of_notes_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Desc__c</fieldItem>
                 <identifier>RecordDesc_cField</identifier>
             </fieldInstance>
