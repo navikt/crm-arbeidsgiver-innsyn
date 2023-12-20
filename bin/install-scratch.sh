@@ -64,6 +64,14 @@ installDependencies() {
 #    fi
 #}
 
+deployingMetadata() {
+    if [[ $npm_config_without_deploy ]]; then
+        echo "Skipping..."
+    else
+        sf project deploy start || { error $? '"sf project deploy start" command failed.'; }
+    fi
+}
+
 openOrg() {
     if [[ -n $npm_config_open_in ]]; then
         sf org open --browser "$npm_config_open_in" --path "lightning/app/c__TAG_NAV_default" || { error $? '"sf org open" command failed.'; }
@@ -143,7 +151,7 @@ operations=(
     cleaningPreviousScratchOrg
     creatingScratchOrg
     installDependencies
-    #deployingMetadata
+    deployingMetadata
     #assignPermission
     #insertingTestData
     #runPostInstallScripts
@@ -155,7 +163,7 @@ operationNames=(
     "Cleaning previous scratch org"
     "Creating scratch org"
     "Installing dependencies"
-    #"Deploying/Pushing metadata"
+    "Deploying/Pushing metadata"
     #"Assigning permissions"
     #"Inserting test data"
     #"Running post install scripts"
