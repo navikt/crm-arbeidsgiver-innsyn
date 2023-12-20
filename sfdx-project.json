@@ -1,23 +1,23 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true,
-      "package": "crm-arbeidsgiver-innsyn",
-      "versionNumber": "0.1.0.NEXT",
-      "dependencies": [
+    "packageDirectories": [
         {
-          "package": "crm-platform-base",
-          "versionNumber": "0.202.0.LATEST"
+            "path": "force-app",
+            "default": true,
+            "package": "crm-arbeidsgiver-innsyn",
+            "versionNumber": "0.2.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "crm-platform-base",
+                    "versionNumber": "0.202.0.LATEST"
+                }
+            ]
         }
-      ]
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "57.0",
+    "packageAliases": {
+        "crm-platform-base": "0Ho2o0000008ORmCAM",
+        "crm-arbeidsgiver-innsyn": "0Ho7U0000004CB4SAM"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "57.0",
-  "packageAliases": {
-    "crm-platform-base": "0Ho2o0000008ORmCAM",
-    "crm-arbeidsgiver-innsyn": "0Ho7U0000004CB4SAM"
-  }
 }
