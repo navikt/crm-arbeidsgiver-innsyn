@@ -22,6 +22,10 @@
                 <behavior>Edit</behavior>
                 <field>Copy_of_notes__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Position_ID__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
