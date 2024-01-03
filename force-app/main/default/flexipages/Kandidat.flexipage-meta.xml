@@ -35,6 +35,16 @@
                 <identifier>RecordPersonnumber_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.On_number_of_lists__c</fieldItem>
+                <identifier>RecordOn_number_of_lists_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-59de438e-8096-4e51-b5e0-1b1111e69651</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -85,11 +95,6 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>New</value>
-                        </valueListItems>
-                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>maxRecordsToDisplay</name>
@@ -115,6 +120,9 @@
                         </valueListItems>
                         <valueListItems>
                             <value>List__c.NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Desc__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
