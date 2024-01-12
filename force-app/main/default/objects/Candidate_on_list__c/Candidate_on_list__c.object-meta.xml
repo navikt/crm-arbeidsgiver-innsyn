@@ -153,7 +153,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Kandidat op liste</label>
+    <label>Kandidat på liste</label>
     <nameField>
         <label>Candidate on list Name</label>
         <type>Text</type>
