@@ -148,17 +148,17 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Candidate on list</label>
+    <label>Kandidat op liste</label>
     <nameField>
         <label>Candidate on list Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Candidate on list</pluralLabel>
+    <pluralLabel>Kandidat på lister</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
