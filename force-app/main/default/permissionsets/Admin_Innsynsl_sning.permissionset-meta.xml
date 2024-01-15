@@ -7,6 +7,21 @@
     <description>Admin tilgang for å importere data</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Candidate_Comment_on_list__c.Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Candidate_Comment_on_list__c.Date_added_to_list__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Candidate_Comment_on_list__c.Kandidat_p_liste__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Candidate__c.Candidate_number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -18,6 +33,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Candidate__c.Personnumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Candidate_on_list__c.Candidatelistnumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -52,6 +72,15 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Admin Innsynsløsning</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Candidate_Comment_on_list__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
