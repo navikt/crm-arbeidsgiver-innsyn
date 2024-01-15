@@ -25,6 +25,16 @@
                 <identifier>RecordList_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Date_added_to_list__c</fieldItem>
+                <identifier>RecordDate_added_to_list_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-16679bd3-2a16-4acd-9dcf-1b3d9dc5142a</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -103,7 +113,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Section</value>
+                    <value>Kandidat og liste informasjon</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
@@ -121,7 +131,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Section</value>
+                    <value>Notatfelt</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>

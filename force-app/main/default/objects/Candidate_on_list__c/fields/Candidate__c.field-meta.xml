@@ -4,7 +4,6 @@
     <externalId>false</externalId>
     <label>Candidate</label>
     <referenceTo>Candidate__c</referenceTo>
-    <relationshipLabel>Candidate on list</relationshipLabel>
     <relationshipName>Candidate_on_list</relationshipName>
     <relationshipOrder>1</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
