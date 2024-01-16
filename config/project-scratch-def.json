@@ -27,8 +27,7 @@
         },
         "securitySettings": {
             "sessionSettings": {
-                "forceRelogin": false,
-                "lockerServiceNext": false
+                "forceRelogin": false
             },
             "enableAdminLoginAsAnyUser": true
         },
