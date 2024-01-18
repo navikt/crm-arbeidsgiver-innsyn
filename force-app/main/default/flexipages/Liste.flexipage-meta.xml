@@ -7,8 +7,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
+                <fieldItem>Record.List_Name__c</fieldItem>
+                <identifier>RecordList_Name_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

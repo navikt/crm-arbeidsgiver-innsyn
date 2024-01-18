@@ -37,6 +37,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Candidate_on_list__c.CandidateListID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Candidate_on_list__c.Candidatelistnumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -58,6 +63,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Candidate_on_list__c.Position_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>List__c.List_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
