@@ -114,7 +114,10 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>List__c.NAME</value>
+                            <value>List__c.List_Name__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>List__c.List_description__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
