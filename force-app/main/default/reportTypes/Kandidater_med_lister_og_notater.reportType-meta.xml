@@ -132,6 +132,21 @@
             <field>Position_ID__c</field>
             <table>Candidate__c.Candidate_on_list__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>List__c.List_Name__c</field>
+            <table>Candidate__c.Candidate_on_list__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>List__c.Name</field>
+            <table>Candidate__c.Candidate_on_list__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>List__c.List_description__c</field>
+            <table>Candidate__c.Candidate_on_list__r</table>
+        </columns>
         <masterLabel>Kandidat på lister</masterLabel>
     </sections>
     <sections>
