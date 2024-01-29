@@ -1,0 +1,26 @@
+<apex:page standardController="Candidate__c" extensions="TAG_GeneratePdfController" renderAs="pdf">
+    <div class="content">
+        <h2>Journalført henvendelse</h2>
+
+        <span> <strong>Navn: </strong>{!Candidate__c.Name} <br /> </span>
+        <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
+        <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
+        <span> <strong>Antall lister: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
+    </div>
+
+    <apex:pageBlock title="Related Records">
+        <apex:pageBlockTable value="{!candidateOnList}" var="related">
+            <apex:column headerValue="Name">
+                <apex:outputField value="{!related.Name}"/>
+            </apex:column>
+            <apex:column headerValue="List Number">
+                <apex:outputField value="{!related.Candidatelistnumber__c}"/>
+            </apex:column>
+            <apex:column headerValue="Notes">
+                <apex:outputField value="{!related.Copy_of_notes__c}"/>
+            </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
+
+
