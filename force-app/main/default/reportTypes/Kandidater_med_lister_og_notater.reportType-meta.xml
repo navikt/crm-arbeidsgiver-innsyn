@@ -195,6 +195,11 @@
             <field>Owner</field>
             <table>Candidate__c.Candidate_on_list__r.Candidate_Comment_on_lists__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>X18_Digit_Id__c</field>
+            <table>Candidate__c.Candidate_on_list__r.Candidate_Comment_on_lists__r</table>
+        </columns>
         <masterLabel>Candidate Comment on lists</masterLabel>
     </sections>
 </ReportType>
