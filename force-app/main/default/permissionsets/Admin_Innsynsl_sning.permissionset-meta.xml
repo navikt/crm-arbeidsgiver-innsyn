@@ -21,6 +21,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Candidate_Comment_on_list__c.X18_Digit_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Candidate__c.Candidate_number__c</field>
         <readable>true</readable>
