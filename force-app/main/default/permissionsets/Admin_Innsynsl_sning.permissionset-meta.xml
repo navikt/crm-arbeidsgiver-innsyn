@@ -41,6 +41,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Candidate_on_list__c.Candidate_on_list_18_digit_id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Candidate_on_list__c.Candidatelistnumber__c</field>
         <readable>true</readable>
