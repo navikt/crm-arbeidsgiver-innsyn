@@ -72,6 +72,15 @@ deployingMetadata() {
     fi
 }
 
+assignPermission() {
+    sf org assign permset \
+    --name Admin_Innsynsl_sning \
+    --name Innsynsl_sning_Lesetilgang \
+    --name Innsynsl_sning_rekrutteringsbistand \
+    --name RB_Innsynsl_sning \
+    || { error $? '"sf org assign permset" command failed.'; }
+}
+
 openOrg() {
     if [[ -n $npm_config_open_in ]]; then
         sf org open --browser "$npm_config_open_in" --path "lightning/app/c__TAG_NAV_default" || { error $? '"sf org open" command failed.'; }
@@ -152,7 +161,7 @@ operations=(
     creatingScratchOrg
     installDependencies
     deployingMetadata
-    #assignPermission
+    assignPermission
     #insertingTestData
     #runPostInstallScripts
     #publishCommunity
@@ -164,7 +173,7 @@ operationNames=(
     "Creating scratch org"
     "Installing dependencies"
     "Deploying/Pushing metadata"
-    #"Assigning permissions"
+    "Assigning permissions"
     #"Inserting test data"
     #"Running post install scripts"
     #"Publishing arbeidsgiver-dialog site"

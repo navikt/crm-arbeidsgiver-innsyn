@@ -1,26 +1,42 @@
-<apex:page standardController="Candidate__c" extensions="TAG_GeneratePdfController" renderAs="pdf">
-    <div class="content">
-        <h2>Journalført henvendelse</h2>
+<apex:page standardController="Candidate__c" extensions="TAG_GeneratePdfController" applyBodyTag="false" standardStylesheets="false" renderAs="pdf">
 
-        <span> <strong>Navn: </strong>{!Candidate__c.Name} <br /> </span>
+<div class="document">
+    <div class="header">
+        <apex:image url="{$Resource.TAGNavInnsyn}" />
+    </div>
+</div>
+
+    <div class="content">
+        <h2>Kandidat</h2>
         <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
         <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
-        <span> <strong>Antall lister: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
+        <span> <strong>Antall lister: </strong>{!Candidate__c.On_number_of_lists__c} <br /> </span>
     </div>
+    <br />
 
-    <apex:pageBlock title="Related Records">
-        <apex:pageBlockTable value="{!candidateOnList}" var="related">
-            <apex:column headerValue="Name">
-                <apex:outputField value="{!related.Name}"/>
-            </apex:column>
-            <apex:column headerValue="List Number">
-                <apex:outputField value="{!related.Candidatelistnumber__c}"/>
-            </apex:column>
-            <apex:column headerValue="Notes">
-                <apex:outputField value="{!related.Copy_of_notes__c}"/>
-            </apex:column>
-        </apex:pageBlockTable>
-    </apex:pageBlock>
+    <span style="font-weight: bold; font-size: 16pt">Lister med kandiadaten:</span>
+        <br />
+        <br />
+        <div style="margin-top: 0.25em">
+            <apex:repeat value="{!candidateOnLists}" var="candidatelist">
+                <apex:outputPanel rendered="{!candidatelist.Candidate__c == Candidate__c.Id}">
+                    <div style="padding-bottom: 0.75em">
+                            <apex:outputPanel>
+                                <b>Liste: </b> {!candidatelist.List__r.List_description__c}
+                            </apex:outputPanel>
+                        <br />
+                            <apex:outputPanel>
+                                <b>Dato kandidaten ble lagt til: </b> {!candidatelist.Date_added_to_list__c}
+                            </apex:outputPanel>
+                        <br />
+                        <apex:repeat value="{!commentsOnLists}" var="commentlist">
+                            <apex:outputPanel rendered="{!candidatelist.Id == commentlist.Kandidat_p_liste__c}">
+                                <b>Notat: </b> {!commentlist.Comment__c} <br /><br />
+                            </apex:outputPanel>
+                        </apex:repeat>
+                    <hr></hr>
+                    </div>
+                </apex:outputPanel>
+            </apex:repeat>
+        </div>
 </apex:page>
-
-
