@@ -38,6 +38,10 @@
                 <behavior>Edit</behavior>
                 <field>ListCandidateID__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Candidate_on_list_18_digit_id__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

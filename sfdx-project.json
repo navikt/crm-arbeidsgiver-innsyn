@@ -4,7 +4,7 @@
             "path": "force-app",
             "default": true,
             "package": "crm-arbeidsgiver-innsyn",
-            "versionNumber": "0.6.0.NEXT",
+            "versionNumber": "0.8.0.NEXT",
             "dependencies": [
                 {
                     "package": "crm-platform-base",

@@ -147,6 +147,11 @@
             <field>List__c.List_description__c</field>
             <table>Candidate__c.Candidate_on_list__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Candidate_on_list_18_digit_id__c</field>
+            <table>Candidate__c.Candidate_on_list__r</table>
+        </columns>
         <masterLabel>Kandidat på lister</masterLabel>
     </sections>
     <sections>
@@ -193,6 +198,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Owner</field>
+            <table>Candidate__c.Candidate_on_list__r.Candidate_Comment_on_lists__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>X18_Digit_Id__c</field>
             <table>Candidate__c.Candidate_on_list__r.Candidate_Comment_on_lists__r</table>
         </columns>
         <masterLabel>Candidate Comment on lists</masterLabel>
