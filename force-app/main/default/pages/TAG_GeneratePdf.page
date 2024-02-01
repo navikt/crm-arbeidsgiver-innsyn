@@ -2,9 +2,8 @@
 
 <div class="document">
     <div class="header">
-        <apex:image url="{$Resource.TAGNavInnsyn}" />
+        <apex:image url="{!URLFOR($Resource.tagInnsynLogos,'tagInnsynNavLogo.png')}" />
     </div>
-</div>
 
     <div class="content">
         <h2>Kandidat</h2>
@@ -39,4 +38,5 @@
                 </apex:outputPanel>
             </apex:repeat>
         </div>
+    </div>
 </apex:page>
