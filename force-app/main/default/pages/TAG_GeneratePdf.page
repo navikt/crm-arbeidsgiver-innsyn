@@ -9,11 +9,11 @@
         <h2>Kandidat</h2>
         <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
         <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
-        <span> <strong>Antall lister: </strong>{!Candidate__c.On_number_of_lists__c} <br /> </span>
+        <span> <strong>Antall lister der kandidaten er registrert: </strong>{!Candidate__c.On_number_of_lists__c} <br /> </span>
     </div>
     <br />
 
-    <span style="font-weight: bold; font-size: 16pt">Lister med kandiadaten:</span>
+    <span style="font-weight: bold; font-size: 16pt">Lister der kandidaten er registrert:</span>
         <br />
         <br />
         <div style="margin-top: 0.25em">
@@ -21,16 +21,22 @@
                 <apex:outputPanel rendered="{!candidatelist.Candidate__c == Candidate__c.Id}">
                     <div style="padding-bottom: 0.75em">
                             <apex:outputPanel>
-                                <b>Liste: </b> {!candidatelist.List__r.List_description__c}
+                                <b>Listenavn: </b> {!candidatelist.List__r.List_Name__c}
                             </apex:outputPanel>
                         <br />
                             <apex:outputPanel>
-                                <b>Dato kandidaten ble lagt til: </b> {!candidatelist.Date_added_to_list__c}
+                                <b>Beskrivelse: </b> {!candidatelist.List__r.List_description__c}
                             </apex:outputPanel>
+                        <br />
                         <br />
                         <apex:repeat value="{!commentsOnLists}" var="commentlist">
                             <apex:outputPanel rendered="{!candidatelist.Id == commentlist.Kandidat_p_liste__c}">
-                                <b>Notat: </b> {!commentlist.Comment__c} <br /><br />
+                                <b>Notat - </b> 
+                                    <apex:outputText value="{0,date,dd.MM.yyyy}">
+                                        <apex:param value="{!commentlist.Date_added_to_list__c}" />
+                                    </apex:outputText>
+                                <br />
+                                {!commentlist.Comment__c} <br /><br />
                             </apex:outputPanel>
                         </apex:repeat>
                     <hr></hr>
@@ -40,3 +46,5 @@
         </div>
     </div>
 </apex:page>
+
+
