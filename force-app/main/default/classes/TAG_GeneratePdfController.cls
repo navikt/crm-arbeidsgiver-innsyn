@@ -15,6 +15,8 @@ public class TAG_GeneratePdfController {
     public List<Candidate_Comment_on_list__c> commentsOnLists { get; private set; }
     public Set<Id> candidateOnListIds = new Set<Id>();
 
+    //create pdf
+
     public TAG_GeneratePdfController(ApexPages.StandardController controller) {
         candidateOnLists = getCandidateOnList(controller.getId());
         //this.candidateOnListIds = new Set<String>();
