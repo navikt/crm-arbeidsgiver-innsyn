@@ -30,6 +30,19 @@ public class TAG_GeneratePdfController {
 
         for (Candidate_on_list__c cl : candidateOnList) {
             candidateOnListIds.add(cl.id);
+
+            if (cl.List__r.List_description__c != null && cl.List__r.List_description__c.length() > 80) {
+                String modifiedListDescription = '';
+                // Calculate the number of line breaks to insert
+                Integer numOfLineBreaks = cl.List__r.List_description__c.length() / 80;
+
+                // Insert line breaks after every 80 characters
+                for (Integer i = 1; i <= numOfLineBreaks; i++) {
+                    modifiedListDescription += cl.List__r.List_description__c.substring((i - 1) * 80, i * 80) + '\n';
+                }
+                // Set the modified ListDescription back to the record
+                cl.List__r.List_description__c = modifiedListDescription;
+            }
         }
 
         return candidateOnList;
@@ -37,7 +50,7 @@ public class TAG_GeneratePdfController {
 
     public List<Candidate_Comment_on_list__c> getCommentsOnList() {
         List<Candidate_Comment_on_list__c> commentsOnList = [
-            SELECT Id, Comment__c, Kandidat_p_liste__c
+            SELECT Id, Comment__c, Kandidat_p_liste__c, Date_added_to_list__c
             FROM Candidate_Comment_on_list__c
             WHERE Kandidat_p_liste__c IN :candidateOnListIds
         ];
