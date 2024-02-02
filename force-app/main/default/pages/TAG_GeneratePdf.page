@@ -3,17 +3,19 @@
 <div class="document">
     <div class="header">
         <apex:image url="{!URLFOR($Resource.tagInnsynLogos,'tagInnsynNavLogo.png')}" />
-    </div>
-
+</div>
     <div class="content">
         <h2>Kandidat</h2>
-        <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
-        <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
-        <span> <strong>Antall lister der kandidaten er registrert: </strong>{!Candidate__c.On_number_of_lists__c} <br /> </span>
+            <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
+            <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
+            <span> <strong>Antall lister der kandidaten er registrert: </strong> </span>
+            <apex:outputText value="{0,number,⌗}">
+            <apex:param value="{!Candidate__c.On_number_of_lists__c}" />
+            </apex:outPutText>
+        <br />
+        <br />
     </div>
-    <br />
-
-    <span style="font-weight: bold; font-size: 16pt">Lister der kandidaten er registrert:</span>
+        <span style="font-weight: bold; font-size: 20pt">Oversikt over listene der kandidaten er registrert:</span>
         <br />
         <br />
         <div style="margin-top: 0.25em">
