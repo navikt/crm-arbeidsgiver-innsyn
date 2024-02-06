@@ -11,6 +11,16 @@
                 <identifier>RecordCandidate_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.RemoveListFromPdf__c</fieldItem>
+                <identifier>RecordRemoveListFromPdf_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-60a78e5c-54c7-460f-82d6-45db9d58f8da</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -118,6 +128,9 @@
                         </valueListItems>
                         <valueListItems>
                             <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>RemoveCommentFromPdf__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>

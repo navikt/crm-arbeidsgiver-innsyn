@@ -25,7 +25,7 @@ public class TAG_GeneratePdfController {
         List<Candidate_on_list__c> candidateOnList = [
             SELECT Id, List__c, Date_added_to_list__c, List__r.List_Name__c, List__r.List_description__c, Candidate__c
             FROM Candidate_on_list__c
-            WHERE Candidate__c = :candidateId
+            WHERE RemoveListFromPdf__c = FALSE AND Candidate__c = :candidateId
         ];
 
         for (Candidate_on_list__c cl : candidateOnList) {
@@ -52,7 +52,7 @@ public class TAG_GeneratePdfController {
         List<Candidate_Comment_on_list__c> commentsOnList = [
             SELECT Id, Comment__c, Kandidat_p_liste__c, Date_added_to_list__c
             FROM Candidate_Comment_on_list__c
-            WHERE Kandidat_p_liste__c IN :candidateOnListIds
+            WHERE RemoveCommentFromPdf__c = FALSE AND Kandidat_p_liste__c IN :candidateOnListIds
         ];
 
         // Iterate through each comment and add line breaks if the text is more than 80 characters
