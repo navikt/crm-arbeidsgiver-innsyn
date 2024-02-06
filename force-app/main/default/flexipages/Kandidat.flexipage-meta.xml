@@ -153,6 +153,9 @@
                         <valueListItems>
                             <value>List__c.List_description__c</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>RemoveListFromPdf__c</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>

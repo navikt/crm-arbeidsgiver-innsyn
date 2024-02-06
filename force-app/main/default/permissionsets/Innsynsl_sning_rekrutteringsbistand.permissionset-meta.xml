@@ -21,6 +21,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Candidate_Comment_on_list__c.RemoveCommentFromPdf__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Candidate__c.Candidate_number__c</field>
         <readable>true</readable>
@@ -58,6 +63,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Candidate_on_list__c.Position_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Candidate_on_list__c.RemoveListFromPdf__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

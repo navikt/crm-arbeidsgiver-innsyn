@@ -38,7 +38,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Candidate__c = candidate.Id,
             Name = '6238238',
             Candidatelistnumber__c = '328947389',
-            List__c = listNAV[0].Id
+            List__c = listNAV[0].Id,
+            RemoveListFromPdf__c = false
         );
         insert candidateOnListNAV;
 
@@ -46,7 +47,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Candidate__c = candidate.Id,
             Name = '6238267',
             Candidatelistnumber__c = '328947355',
-            List__c = listUIO[0].Id
+            List__c = listUIO[0].Id,
+            RemoveListFromPdf__c = false
         );
         insert candidateOnListUIO;
 
@@ -54,7 +56,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Kandidat_p_liste__c = candidateOnListNAV.Id,
             Name = '63722154125',
             Comment__c = 'Following losses to Nottingham Forest and Manchester City, the black and whites are bidding to avoid a trio of successive PL home defeats for the first time since January/February 2021.',
-            Date_added_to_list__c = Date.TODAY()
+            Date_added_to_list__c = Date.TODAY(),
+            RemoveCommentFromPdf__c = false
         );
         insert commentOnListNAV1;
 
@@ -62,7 +65,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Kandidat_p_liste__c = candidateOnListNAV.Id,
             Name = '6372215333',
             Comment__c = 'Following losses to Nottingham Forest and Manchester City, the black and whites are bidding to avoid a trio of successive PL home defeats for the first time since January/February 2021.',
-            Date_added_to_list__c = Date.TODAY()
+            Date_added_to_list__c = Date.TODAY(),
+            RemoveCommentFromPdf__c = false
         );
         insert commentOnListNAV2;
 
@@ -70,7 +74,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Kandidat_p_liste__c = candidateOnListUIO.Id,
             Name = '63722154444',
             Comment__c = 'Following losses to Nottingham Forest and Manchester City, the black and whites are bidding to avoid a trio of successive PL home defeats for the first time since January/February 2021.',
-            Date_added_to_list__c = Date.TODAY()
+            Date_added_to_list__c = Date.TODAY(),
+            RemoveCommentFromPdf__c = false
         );
         insert commentOnListUIO1;
 
@@ -78,7 +83,8 @@ public with sharing class TAG_GeneratePdfControllerTest {
             Kandidat_p_liste__c = candidateOnListUIO.Id,
             Name = '63722154444',
             Comment__c = 'Following losses to Nottingham Forest and Manchester City, the black and whites are bidding to avoid a trio of successive PL home defeats for the first time since January/February 2021.',
-            Date_added_to_list__c = Date.TODAY()
+            Date_added_to_list__c = Date.TODAY(),
+            RemoveCommentFromPdf__c = false
         );
         insert commentOnListUIO2;
 
