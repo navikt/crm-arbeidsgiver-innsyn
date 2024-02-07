@@ -39,6 +39,7 @@
     <label>Innsyn Rekrutteringsbistand</label>
     <navType>Standard</navType>
     <tabs>Candidate__c</tabs>
+    <tabs>List__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Innsyn_Rekrutteringsbistand_UtilityBar</utilityBar>
 </CustomApplication>
