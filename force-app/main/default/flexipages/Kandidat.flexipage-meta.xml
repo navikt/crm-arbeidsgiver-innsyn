@@ -17,14 +17,24 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Candidate_number__c</fieldItem>
-                <identifier>RecordCandidate_number_cField</identifier>
+                <fieldItem>Record.On_number_of_lists__c</fieldItem>
+                <identifier>RecordOn_number_of_lists_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-778a27b6-1281-486d-92c2-ec703362b69e</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Candidate_number__c</fieldItem>
+                <identifier>RecordCandidate_number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

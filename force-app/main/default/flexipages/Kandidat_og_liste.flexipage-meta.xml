@@ -35,16 +35,6 @@
                 <identifier>RecordList_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Date_added_to_list__c</fieldItem>
-                <identifier>RecordDate_added_to_list_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-16679bd3-2a16-4acd-9dcf-1b3d9dc5142a</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -121,13 +111,13 @@
                     <name>relatedListFieldAliases</name>
                     <valueList>
                         <valueListItems>
+                            <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Date_added_to_list__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Comment__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
                             <value>RemoveCommentFromPdf__c</value>
