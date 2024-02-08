@@ -133,7 +133,7 @@
     </pageAccesses>
     <tabSettings>
         <tab>Candidate__c</tab>
-        <visibility>Available</visibility>
+        <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
         <tab>Candidate_on_list__c</tab>
