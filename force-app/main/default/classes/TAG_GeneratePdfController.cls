@@ -30,7 +30,7 @@ public class TAG_GeneratePdfController {
 
         for (Candidate_on_list__c cl : candidateOnList) {
             candidateOnListIds.add(cl.id);
-
+            /*
             if (cl.List__r.List_description__c != null && cl.List__r.List_description__c.length() > 80) {
                 String modifiedListDescription = '';
                 // Calculate the number of line breaks to insert
@@ -42,8 +42,10 @@ public class TAG_GeneratePdfController {
                 }
                 // Set the modified ListDescription back to the record
                 cl.List__r.List_description__c = modifiedListDescription;
-            }
+            }*/
         }
+
+        system.debug('Kandidatliste: ' + candidateOnList[0].List__r.List_description__c);
 
         return candidateOnList;
     }
@@ -54,7 +56,7 @@ public class TAG_GeneratePdfController {
             FROM Candidate_Comment_on_list__c
             WHERE RemoveCommentFromPdf__c = FALSE AND Kandidat_p_liste__c IN :candidateOnListIds
         ];
-
+        /*
         // Iterate through each comment and add line breaks if the text is more than 80 characters
         for (Candidate_Comment_on_list__c comment : commentsOnList) {
             if (comment.Comment__c != null && comment.Comment__c.length() > 80) {
@@ -69,7 +71,9 @@ public class TAG_GeneratePdfController {
                 // Set the modified comment back to the record
                 comment.Comment__c = modifiedComment;
             }
-        }
+        }*/
+
+        system.debug('Comment: ' + commentsOnList[0].Comment__c);
         return commentsOnList;
     }
 }

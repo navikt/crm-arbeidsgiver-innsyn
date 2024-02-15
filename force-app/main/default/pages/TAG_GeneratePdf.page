@@ -22,13 +22,9 @@
             <apex:repeat value="{!candidateOnLists}" var="candidatelist">
                 <apex:outputPanel rendered="{!candidatelist.Candidate__c == Candidate__c.Id}">
                     <div style="padding-bottom: 0.75em">
-                            <apex:outputPanel>
-                                <b>Listenavn: </b> {!candidatelist.List__r.List_Name__c}
-                            </apex:outputPanel>
+                        <b>Listenavn: </b> {!candidatelist.List__r.List_Name__c}
                         <br />
-                            <apex:outputPanel>
-                                <b>Beskrivelse: </b> {!candidatelist.List__r.List_description__c}
-                            </apex:outputPanel>
+                        <apex:outputText value="{!candidatelist.List__r.List_description__c}" escape="false" />
                         <br />
                         <br />
                         <apex:repeat value="{!commentsOnLists}" var="commentlist">
