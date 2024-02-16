@@ -19,28 +19,38 @@
         <br />
         <br />
         <div style="margin-top: 0.25em">
-            <apex:repeat value="{!candidateOnLists}" var="candidatelist">
-                <apex:outputPanel rendered="{!candidatelist.Candidate__c == Candidate__c.Id}">
-                    <div style="padding-bottom: 0.75em">
-                        <b>Listenavn: </b> {!candidatelist.List__r.List_Name__c}
-                        <br />
-                        <apex:outputText value="{!candidatelist.List__r.List_description__c}" escape="false" />
-                        <br />
-                        <br />
-                        <apex:repeat value="{!commentsOnLists}" var="commentlist">
-                            <apex:outputPanel rendered="{!candidatelist.Id == commentlist.Kandidat_p_liste__c}">
-                                <b>Notat - </b> 
-                                    <apex:outputText value="{0,date,dd.MM.yyyy}">
-                                        <apex:param value="{!commentlist.Date_added_to_list__c}" />
-                                    </apex:outputText>
-                                <br />
-                                {!commentlist.Comment__c} <br /><br />
+            <apex:outputPanel rendered="{!NOT(ISNULL(candidateOnLists))}">
+                <apex:repeat value="{!candidateOnLists}" var="candidatelist">
+                    <apex:outputPanel rendered="{!candidatelist.Candidate__c == Candidate__c.Id}">
+                        <div style="padding-bottom: 0.75em">
+                            <b>Listenavn: </b> {!candidatelist.List__r.List_Name__c}
+                            <br />
+                            <apex:outputText value="{!candidatelist.List__r.List_description__c}" escape="false" />
+                            <br />
+                            <br />
+                            <apex:outputPanel rendered="{!NOT(ISNULL(commentsOnLists))}">
+                                <apex:repeat value="{!commentsOnLists}" var="commentlist">
+                                    <apex:outputPanel rendered="{!candidatelist.Id == commentlist.Kandidat_p_liste__c}">
+                                        <b>Notat - </b> 
+                                            <apex:outputText value="{0,date,dd.MM.yyyy}">
+                                                <apex:param value="{!commentlist.Date_added_to_list__c}" />
+                                            </apex:outputText>
+                                        <br />
+                                        {!commentlist.Comment__c} <br /><br />
+                                    </apex:outputPanel>
+                                </apex:repeat>
                             </apex:outputPanel>
-                        </apex:repeat>
-                    <hr></hr>
-                    </div>
-                </apex:outputPanel>
-            </apex:repeat>
+                            <apex:outputPanel rendered="{!ISNULL(commentsOnLists)}">
+                                <p>Ingen kommentarer på listene.</p>
+                            </apex:outputPanel>
+                        <hr></hr>
+                        </div>
+                    </apex:outputPanel>
+                </apex:repeat>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!ISNULL(candidateOnLists)}">
+                <p>Ingen kandidatlister funnet.</p>
+            </apex:outputPanel>
         </div>
     </div>
 </apex:page>

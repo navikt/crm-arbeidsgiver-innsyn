@@ -45,9 +45,11 @@ public class TAG_GeneratePdfController {
             }*/
         }
 
-        system.debug('Kandidatliste: ' + candidateOnList[0].List__r.List_description__c);
-
-        return candidateOnList;
+        if (candidateOnList.size() > 0) {
+            return candidateOnList;
+        } else {
+            return null;
+        }
     }
 
     public List<Candidate_Comment_on_list__c> getCommentsOnList() {
@@ -73,7 +75,10 @@ public class TAG_GeneratePdfController {
             }
         }*/
 
-        system.debug('Comment: ' + commentsOnList[0].Comment__c);
-        return commentsOnList;
+        if (commentsOnList.size() > 0) {
+            return commentsOnList;
+        } else {
+            return null;
+        }
     }
 }
