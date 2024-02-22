@@ -8,14 +8,14 @@
         <h2>Kandidat</h2>
             <span> <strong>Personnummer: </strong>{!Candidate__c.Personnumber__c} <br /> </span>
             <span> <strong>Kandidatnummer: </strong>{!Candidate__c.Candidate_Number__c} <br /> </span>
-            <span> <strong>Antall lister der kandidaten er registrert: </strong> </span>
+        <!--    <span> <strong>Antall lister der kandidaten er registrert: </strong> </span>
             <apex:outputText value="{0,number,⌗}">
             <apex:param value="{!Candidate__c.On_number_of_lists__c}" />
-            </apex:outPutText>
+            </apex:outPutText> -->
         <br />
         <br />
     </div>
-        <span style="font-weight: bold; font-size: 20pt">Oversikt over listene der kandidaten er registrert:</span>
+        <span style="font-weight: bold; font-size: 20pt">Oversikt over opplysninger du har bedt om innsyn i</span>
         <br />
         <br />
         <div style="margin-top: 0.25em">
